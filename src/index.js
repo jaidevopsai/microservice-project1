@@ -1,3 +1,4 @@
+// Microservice main entry point - updated comment
 require("dotenv").config();
 const express = require("express");
 const app = express();
