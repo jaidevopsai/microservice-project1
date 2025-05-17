@@ -15,3 +15,13 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm audit --audit-level=high
+      - name: Upload audit report
+        if: always()
+        run: |
+          mkdir -p audit-report
+          npm audit --json > audit-report/npm-audit.json || true
+      - name: Upload audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-audit-report
+          path: audit-report/
