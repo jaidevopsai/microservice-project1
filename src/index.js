@@ -13,4 +13,5 @@ app.get('/api/health', (req, res) => {
 // Start the server
 app.listen(PORT, () => {
     console.log(`Microservice is running on http://localhost:${PORT}`);
+    console.log('Health endpoint available at http://localhost:3000/api/health');
 });
