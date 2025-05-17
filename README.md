@@ -3,9 +3,11 @@
 ![CI](https://github.com/yourusername/microservice-project/actions/workflows/ci.yml/badge.svg)
 
 ## Overview
+
 This microservice project is designed to provide a scalable and maintainable service architecture. It includes a continuous integration workflow to ensure code quality and streamline deployment.
 
 ## Project Structure
+
 ```
 microservice-project
 ├── .github
@@ -26,6 +28,7 @@ microservice-project
 ## Setup Instructions
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/yourusername/microservice-project.git
    cd microservice-project
@@ -33,6 +36,7 @@ microservice-project
 
 2. **Install Dependencies**
    Ensure you have Node.js installed. Then run:
+
    ```bash
    npm install
    ```
@@ -62,7 +66,8 @@ You can test the API endpoint using:
 - **Browser:**  
   Visit [http://localhost:3000/api/health](http://localhost:3000/api/health)
 
-- **curl:**  
+- **curl:**
+
   ```bash
   curl http://localhost:3000/api/health
   ```
@@ -75,10 +80,13 @@ You can test the API endpoint using:
   and click "Send Request".
 
 ## Running Tests
+
 To run the tests, use the following command:
+
 ```bash
 npm test
 ```
+
 Tests are located in the `tests` directory and use [Jest](https://jestjs.io/) and [Supertest](https://github.com/visionmedia/supertest).
 
 ## Continuous Integration & Workflows
@@ -91,6 +99,7 @@ This project uses GitHub Actions for CI/CD. Workflows include:
 - **release.yml:** Creates a GitHub release when a new tag is pushed.
 
 You can trigger all workflows with:
+
 ```bash
 git add .
 git commit -m "Test all workflows"
@@ -100,6 +109,7 @@ git push origin v1.0.0
 ```
 
 ## Deployment
+
 The microservice is set up to deploy automatically when changes are pushed to the main branch, provided all tests pass. The deployment process is defined in the GitHub Actions workflow located in `.github/workflows/ci.yml`.
 
 ## Ignoring Files
@@ -107,7 +117,9 @@ The microservice is set up to deploy automatically when changes are pushed to th
 The `.gitignore` file ensures that files and directories such as `node_modules/`, `.env`, and build artifacts are not committed to the repository.
 
 ## Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
