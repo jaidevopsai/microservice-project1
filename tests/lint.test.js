@@ -1,4 +1,4 @@
-const { execSync } = require('child_process');
+const { execSync } = require('node:child_process');
 
 describe('Lint', () => {
   it('should have no lint errors', () => {

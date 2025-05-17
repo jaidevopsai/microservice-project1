@@ -1,5 +1,7 @@
 # Microservice Project
 
+![CI](https://github.com/yourusername/microservice-project/actions/workflows/ci.yml/badge.svg)
+
 ## Overview
 This microservice project is designed to provide a scalable and maintainable service architecture. It includes a continuous integration workflow to ensure code quality and streamline deployment.
 

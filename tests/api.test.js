@@ -47,4 +47,9 @@ describe('API Endpoints', () => {
         expect(res.statusCode).toBe(400);
         expect(res.body).toEqual({ error: 'Both a and b must be numbers.' });
     });
+
+    it('GET /api/unknown should return 404', async () => {
+        const res = await request(app).get('/api/unknown');
+        expect(res.statusCode).toBe(404);
+    });
 });
