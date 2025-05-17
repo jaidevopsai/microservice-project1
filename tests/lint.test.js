@@ -2,8 +2,12 @@ const { execSync } = require('child_process');
 
 describe('Lint', () => {
   it('should have no lint errors', () => {
-    expect(() => {
+    try {
       execSync('npm run lint', { stdio: 'pipe' });
-    }).not.toThrow();
+    } catch (error) {
+      // Output lint errors for easier debugging
+      console.error(error.stdout ? error.stdout.toString() : error.message);
+      throw error;
+    }
   });
 });
