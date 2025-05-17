@@ -16,3 +16,8 @@ jobs:
           node-version: "14"
       - run: npm install
       - run: npx eslint .
+      - name: Lint client
+        run: |
+          cd client
+          npm install
+          npx eslint .
