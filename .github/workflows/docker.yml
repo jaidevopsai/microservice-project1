@@ -21,4 +21,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: yourdockerhubusername/microservice-project:latest
+          tags: jaidevopsai/microservice-project:latest
